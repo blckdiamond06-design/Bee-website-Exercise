@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Starter page for learning scroll, hover, pointer, and SVG animation."
+  >
+
+  <title>Small Things, Big Systems</title>
+
+  <link
+    rel="stylesheet"
+    href="styles.css"
+  >
+</head>
+
+
+<body>
+
+  <!-- =====================================================
+       HEADER
+       ===================================================== -->
+
+  <header class="site-header">
+
+    <a
+      class="site-logo"
+      href="#top"
+      aria-label="Small Things, Big Systems — Home"
+    >
+      <span class="logo-mark">●</span>
+      <span class="logo-text">
+        Small Things,<br>
+        Big Systems
+      </span>
+    </a>
+
+    <nav
+      class="site-nav"
+      aria-label="Primary navigation"
+    >
+
+      <a href="#observe">
+        Observe
+      </a>
+
+      <a href="#pollination">
+        Pollination
+      </a>
+
+      <a href="#interaction">
+        Interaction
+      </a>
+
+      <a href="#svg">
+        SVG
+      </a>
+
+    </nav>
+
+  </header>
+
+
+
+  <main id="top">
+
+
+    <!-- =====================================================
+         SECTION 01
+         HERO
+
+         STUDENT TASK:
+         Add an entrance animation.
+         Possible properties:
+         opacity
+         translateY
+         scale
+         stagger
+         ===================================================== -->
+
+    <section
+      class="section hero"
+      id="intro"
+    >
+
+      <div class="hero-decoration hero-decoration-left">
+        ✦
+      </div>
+
+      <div class="hero-decoration hero-decoration-right">
+        ✦
+      </div>
+
+
+      <div class="hero-content">
+
+        <p class="eyebrow">
+          AN INTERACTIVE FIELD GUIDE
+        </p>
+
+        <h1>
+          Small things
+          <span class="accent-text">
+            move
+          </span>
+          big systems.
+        </h1>
+
+        <p class="hero-intro">
+          A short scrolling experiment about pollination,
+          movement, interaction, and the tiny relationships
+          hiding inside larger ecosystems.
+        </p>
+
+        <a
+          class="button"
+          href="#observe"
+        >
+          Begin exploring
+          <span aria-hidden="true">↓</span>
+        </a>
+
+      </div>
+
+
+      <div
+        class="hero-object"
+        aria-hidden="true"
+      >
+        🐝
+      </div>
+
+
+      <div
+        class="scroll-prompt"
+        aria-hidden="true"
+      >
+        <span class="scroll-line"></span>
+        Scroll
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SECTION 02
+         SCROLL REVEAL
+
+         STUDENT TASK:
+         Use IntersectionObserver to reveal:
+         eyebrow
+         heading
+         paragraph
+         statistic
+
+         Try:
+         opacity
+         translateY
+         stagger
+         ===================================================== -->
+
+    <section
+      class="section observation-section"
+      id="observe"
+    >
+
+      <div class="section-number reveal">
+        01
+      </div>
+
+
+      <div class="content-grid">
+
+        <div class="section-copy">
+
+          <p class="eyebrow">
+            OBSERVE
+          </p>
+
+          <h2>
+            Movement tells us where to look.
+          </h2>
+
+          <p class="large-copy">
+            Animation can establish hierarchy before
+            a visitor reads a single word.
+          </p>
+
+          <p>
+            When an element enters the viewport, movement can
+            signal that something new has arrived. Used
+            carefully, this helps organize a long scrolling
+            story rather than simply decorating it.
+          </p>
+
+        </div>
+
+
+        <div class="stat-card reveal">
+
+          <span class="stat-number">
+            01
+          </span>
+
+          <span class="stat-label">
+            scroll can become a trigger
+          </span>
+
+          <div class="stat-line"></div>
+
+          <p>
+            The browser can observe when an element enters
+            the viewport and respond by changing its state.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="exercise-note reveal">
+
+        <span class="exercise-label">
+          MOTION EXERCISE
+        </span>
+
+        <p>
+          Reveal this section when approximately 25% of it
+          becomes visible.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SECTION 03
+         STAGGERED OBJECTS
+
+         STUDENT TASK:
+         Reveal individual elements sequentially.
+         ===================================================== -->
+
+    <section
+      class="section ecosystem-section"
+      id="ecosystem"
+    >
+
+      <div class="section-number">
+        02
+      </div>
+
+
+      <div class="center-copy">
+
+        <p class="eyebrow">
+          SEQUENCE
+        </p>
+
+        <h2>
+          Not everything needs to move at once.
+        </h2>
+
+        <p>
+          Small timing differences can create hierarchy,
+          rhythm, and anticipation.
+        </p>
+
+      </div>
+
+
+
+      <div
+        class="ecosystem-stage"
+        aria-label="Illustrated pollination scene"
+      >
+
+        <div class="scene-object scene-flower flower-one ecosystem-reveal">
+          ✿
+        </div>
+
+        <div class="scene-object scene-flower flower-two ecosystem-reveal">
+          ✿
+        </div>
+
+        <div class="scene-object scene-flower flower-three ecosystem-reveal">
+          ✿
+        </div>
+
+        <div class="scene-object scene-bee bee-one ecosystem-reveal">
+          🐝
+        </div>
+
+        <div class="scene-object scene-bee bee-two ecosystem-reveal">
+          🐝
+        </div>
+
+      </div>
+
+
+      <div class="exercise-note centered-note">
+
+        <span class="exercise-label">
+          MOTION EXERCISE
+        </span>
+
+        <p>
+          Reveal the flowers first and the bees afterward
+          using staggered delays.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SECTION 04
+         PARALLAX
+
+         STUDENT TASK:
+         Move foreground and background objects
+         at different rates during scroll.
+         ===================================================== -->
+
+    <section
+      class="section pollination-section"
+      id="pollination"
+    >
+
+      <div class="parallax-background-object">
+        ✿
+      </div>
+
+      <div class="parallax-background-object object-right">
+        ✿
+      </div>
+
+
+      <div class="section-number light-number">
+        03
+      </div>
+
+
+      <div class="content-grid">
+
+        <div class="section-copy reveal">
+
+          <p class="eyebrow light-eyebrow">
+            DEPTH
+          </p>
+
+          <h2>
+            Scroll can create an illusion of space.
+          </h2>
+
+          <p class="large-copy">
+            Elements moving at different speeds appear to
+            exist at different distances.
+          </p>
+
+          <p>
+            Parallax is most effective when it is subtle.
+            The movement should support the spatial
+            composition rather than make reading difficult.
+          </p>
+
+        </div>
+
+
+        <div class="parallax-stage">
+
+          <div class="parallax-orbit orbit-one"></div>
+          <div class="parallax-orbit orbit-two"></div>
+
+          <div
+            class="parallax-object parallax-bee"
+            data-parallax="90"
+          >
+            🐝
+          </div>
+
+          <div
+            class="parallax-object parallax-flower"
+            data-parallax="-45"
+          >
+            ✿
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="exercise-note exercise-note-dark">
+
+        <span class="exercise-label">
+          MOTION EXERCISE
+        </span>
+
+        <p>
+          Move the bee and flower at different rates relative
+          to scroll position.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SECTION 05
+         HOVER / MOUSE-IN
+
+         STUDENT TASK:
+         Create a reaction when the pointer enters
+         an interactive region.
+
+         First solve using CSS :hover.
+         ===================================================== -->
+
+    <section
+      class="section interaction-section"
+      id="interaction"
+    >
+
+      <div class="section-number">
+        04
+      </div>
+
+
+      <div class="content-grid">
+
+        <div class="section-copy">
+
+          <p class="eyebrow">
+            RESPONSE
+          </p>
+
+          <h2>
+            An interface can notice you.
+          </h2>
+
+          <p class="large-copy">
+            Hover creates a simple relationship between
+            user action and system response.
+          </p>
+
+          <p>
+            A response to pointer movement can communicate
+            interactivity, reveal additional information,
+            or simply make an illustration feel alive.
+          </p>
+
+        </div>
+
+
+        <div
+          class="hover-stage"
+          tabindex="0"
+        >
+
+          <span class="interaction-hint">
+            Move your pointer here
+          </span>
+
+          <div class="hover-flower">
+            ✿
+          </div>
+
+          <div class="hover-bee">
+            🐝
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="exercise-note">
+
+        <span class="exercise-label">
+          MOTION EXERCISE
+        </span>
+
+        <p>
+          When the pointer enters the scene, move the bee
+          and rotate or scale the flower.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SECTION 06
+         POINTER FOLLOWING
+
+         STUDENT TASK:
+         Read mouse position inside the stage and
+         map it to translateX / translateY.
+         ===================================================== -->
+
+    <section
+      class="section pointer-section"
+      id="pointer"
+    >
+
+      <div class="section-number">
+        05
+      </div>
+
+
+      <div class="center-copy">
+
+        <p class="eyebrow">
+          POINTER POSITION
+        </p>
+
+        <h2>
+          Hover can become continuous input.
+        </h2>
+
+        <p>
+          Instead of simply detecting whether the pointer is
+          present, we can respond to exactly where it is.
+        </p>
+
+      </div>
+
+
+      <div class="mouse-stage">
+
+        <div class="mouse-stage-grid"></div>
+
+        <div class="mouse-target">
+          🐝
+        </div>
+
+        <div class="mouse-stage-label">
+          Move the pointer around this area
+        </div>
+
+      </div>
+
+
+      <div class="exercise-note centered-note">
+
+        <span class="exercise-label">
+          MOTION EXERCISE
+        </span>
+
+        <p>
+          Calculate the pointer position relative to the
+          center of this container and make the bee follow.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SECTION 07
+         SVGATOR
+
+         STUDENT TASK:
+         Replace the placeholder with the student's
+         SVGator animation.
+
+         Try:
+         looping animation
+         mouse-over animation
+         scroll-into-view animation
+         ===================================================== -->
+
+    <section
+      class="section svg-section"
+      id="svg"
+    >
+
+      <div class="section-number light-number">
+        06
+      </div>
+
+
+      <div class="content-grid">
+
+        <div class="section-copy">
+
+          <p class="eyebrow light-eyebrow">
+            INTERNAL MOTION
+          </p>
+
+          <h2>
+            The object can have its own timeline.
+          </h2>
+
+          <p class="large-copy">
+            Page movement and illustration movement do not
+            need to be the same animation.
+          </p>
+
+          <p>
+            SVGator can control motion inside an illustration
+            while JavaScript controls the relationship
+            between that illustration and the page.
+          </p>
+
+        </div>
+
+
+
+        <div class="svg-stage">
+
+          <!--
+          ==================================================
+          REPLACE THIS PLACEHOLDER WITH AN SVGATOR EXPORT.
+
+          For SVGator "On scroll into view":
+          paste the SVG markup INLINE here.
+
+          Do not use:
+
+          <img src="bee.svg">
+
+          if your SVGator trigger depends on viewport entry.
+          ==================================================
+          -->
+
+          <div class="svg-placeholder">
+             <p>
+              <svg id="eqOdbeuYHkS1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" project-id="32956998f9d84d33bc1e3e631166c446" export-id="9d86c95b3a5a4b92901c02be0607b126" cached="true"><ellipse id="eqOdbeuYHkS2" rx="79.833559" ry="51.964389" transform="translate(151.741823 169.247146)" fill="#efe166" stroke-width="0"/><line x1="0" y1="-40.352235" x2="0" y2="40.352236" transform="translate(103.26108 169.247146)" fill="none" stroke="#000" stroke-width="15"/><line x1="0" y1="-51.964389" x2="0" y2="51.964389" transform="translate(150 169.247146)" fill="none" stroke="#000" stroke-width="15"/><line x1="-0.290304" y1="-40.352235" x2="0.290304" y2="40.352236" transform="translate(198.190439 169.247147)" fill="none" stroke="#000" stroke-width="15" stroke-miterlimit="1"/><ellipse id="eqOdbeuYHkS7" rx="25.546739" ry="40.061932" transform="matrix(1.213175 -0.659628 0.50643 0.931417 118.25364 102.064266)" fill="#d2dbed" stroke-width="0"/><ellipse id="eqOdbeuYHkS8" rx="29.320689" ry="43.835882" transform="matrix(0.83913 0.697904 -0.639443 0.768839 188.151267 102.064279)" fill="#c3cddf" stroke-width="0"/><ellipse id="eqOdbeuYHkS9" rx="31.64312" ry="41.513451" transform="matrix(0.856329 0.516431 -0.516431 0.856329 124.453277 225.566098)" fill="#d2dbed" stroke-width="0"/><ellipse id="eqOdbeuYHkS10" rx="31.643119" ry="42.384362" transform="matrix(-0.874495 0.365779 -0.359485 -0.859446 181.450486 225.566093)" fill="#c3cddf" stroke-width="0"/><g id="eqOdbeuYHkS11" transform="translate(-0.31605 0.286364)"><line x1="-18.86975" y1="-16.851363" x2="18.86975" y2="16.851363" transform="translate(62.837066 135.76698)" fill="none" stroke="#000" stroke-width="5"/><ellipse rx="7.5479" ry="7.26712" transform="translate(43.967316 117.282757)" stroke-width="0"/></g><g id="eqOdbeuYHkS14" transform="translate(0.793089 0.987114)"><line x1="-18.86975" y1="14.308449" x2="18.86975" y2="-14.308449" transform="translate(62.837066 192.049952)" fill="none" stroke="#000" stroke-width="5"/><ellipse rx="6.641099" ry="7.426567" transform="translate(43.060515 206.358401)" stroke-width="0"/></g><polygon id="eqOdbeuYHkS17" points="0,-30.5068 26.419664,15.2534 -26.419664,15.2534 0,-30.5068" transform="matrix(0.115405 0.686079 -0.903104 0.151911 233.034438 168.604602)" stroke-width="0"/>
+<script><![CDATA[
+(function(s,i,u,o,c,w,d,t,n,x,e,p,a,b){(a=Array.from(d.querySelectorAll('svg#' + i.root)).filter(n=> !n.svgatorPlayer)[0]||{}).svgatorPlayer={ready:(function(a){b=[];return function(c){return c?(b.push(c),a.svgatorPlayer):b;};})(a),};w[o]=w[o]||{};w[o][s]=w[o][s]||[];w[o][s].push(i);e=d.createElementNS(n,t);e.async=true;e.setAttributeNS(x,'href',[u,s,'.','j','s','?','v','=',c].join(''));e.setAttributeNS(null,'src',[u,s,'.','j','s','?','v','=',c].join(''));p=d.getElementsByTagName(t)[0];p.parentNode.insertBefore(e,p);})('91c80d77',{"root":"eqOdbeuYHkS1","version":"2025-04-07","animations":[{"elements":{"eqOdbeuYHkS2":{"transform":{"keys":{"o":[{"t":60,"v":{"x":151.741823,"y":169.247146,"type":"corner"}},{"t":700,"v":{"x":153.778747,"y":169.247146,"type":"corner"}},{"t":1300,"v":{"x":145.892086,"y":169.247146,"type":"corner"}},{"t":1600,"v":{"x":149.246318,"y":169.247146,"type":"corner"}}]}}},"eqOdbeuYHkS7":{"transform":{"data":{"o":{"x":124.453264,"y":139.378625,"type":"corner"},"r":-28.533829,"t":{"x":8.963416,"y":-33.71405}},"keys":{"s":[{"t":0,"v":{"x":1.380907,"y":1.060193}},{"t":400,"v":{"x":1.380907,"y":0.909914}},{"t":800,"v":{"x":1.380907,"y":0.800201}},{"t":1200,"v":{"x":1.380907,"y":0.909913}},{"t":1600,"v":{"x":1.380907,"y":1.077466}}]}}},"eqOdbeuYHkS8":{"transform":{"data":{"o":{"x":169.015272,"y":135.766991,"type":"corner"},"r":39.750273,"t":{"x":-6.265622,"y":-38.148324}},"keys":{"s":[{"t":0,"v":{"x":1.091425,"y":1}},{"t":400,"v":{"x":1.091425,"y":0.865337}},{"t":1200,"v":{"x":1.091425,"y":0.985495}}]}}},"eqOdbeuYHkS9":{"transform":{"data":{"o":{"x":138.594597,"y":191.368799,"type":"corner"},"r":31.093135,"t":{"x":5.550914,"y":36.58715}},"keys":{"s":[{"t":0,"v":{"x":1,"y":1}},{"t":440,"v":{"x":1,"y":0.840064}},{"t":900,"v":{"x":1,"y":0.993885}}]}}},"eqOdbeuYHkS10":{"transform":{"data":{"o":{"x":172.989019,"y":191.368799,"type":"corner"},"r":157.301672,"t":{"x":5.686083,"y":-37.369936}},"keys":{"s":[{"t":0,"v":{"x":0.947911,"y":0.931599}},{"t":400,"v":{"x":0.947911,"y":0.787506}},{"t":900,"v":{"x":0.947911,"y":0.971017}}]}}},"eqOdbeuYHkS11":{"transform":{"data":{"o":{"x":75.917522,"y":150.236129,"type":"corner"},"t":{"x":-76.233572,"y":-149.949765}},"keys":{"r":[{"t":0,"v":0},{"t":400,"v":10.449294},{"t":800,"v":0.96441}]}}},"eqOdbeuYHkS14":{"transform":{"data":{"o":{"x":81.202732,"y":178.787535,"type":"corner"},"t":{"x":-80.409643,"y":-177.800421}},"keys":{"r":[{"t":0,"v":0},{"t":400,"v":-6.914377},{"t":800,"v":2.60072}]}}},"eqOdbeuYHkS17":{"transform":{"data":{"o":{"x":224.35875,"y":169.247147,"type":"corner"},"s":{"x":0.695717,"y":0.915791},"t":{"x":1.157766,"y":-9.458578}},"keys":{"r":[{"t":1800,"v":80.451655},{"t":2200,"v":89.740038},{"t":2600,"v":95.058951}]}}}},"s":"MDJA1ZGQ0N2JiZHGNlY2JYYmFjJZGMyQmM4YzcU3YjkzOGM4OTWg5ODk4NTdiYJmRjMmNiYmVIFYmNjZGMyYzhFjNzdiOTM4YTUg1N2JjMkFjZQEliZWNiYmFYWY2RjMmM4YzdNCY2M3YjkzODYk4NTdiYmZjMYmM1YzU3YjkzHOGE4NTdiYmFXjNWNkYmVjYmDM3YmFjZGJlNM2I5M1RiZmJhRYzVjY2JlODUM3YlljY2M5YmEViZWJkN2I5MHzhhUTg1N2JiYZmM5Y2M3YjkQzOGE4OTg5ZDFZJ"}],"options":"MDMAxMDgyMjk3YHTdiNjg3OTdiXMjk0MTI5NzMF3NjY4RzZiMjOk4NA|"},'https://cdn.svgator.com/ply/','__SVGATOR_PLAYER__','2025-04-07',window,document,'script','http://www.w3.org/2000/svg','http://www.w3.org/1999/xlink')
+]]></script>
+</svg>
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="exercise-note exercise-note-dark">
+
+        <span class="exercise-label">
+          MOTION EXERCISE
+        </span>
+
+        <p>
+          Animate at least two parts independently inside the
+          SVG, then combine the SVG animation with page-level
+          movement.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SECTION 08
+         FINAL COMBINED MOMENT
+
+         STUDENT TASK:
+         Combine at least two techniques.
+         Example:
+         scroll + SVG
+         hover + SVG
+         stagger + parallax
+         ===================================================== -->
+
+    <section
+      class="section finale-section"
+      id="finale"
+    >
+
+      <div class="finale-object flower-a">
+        ✿
+      </div>
+
+      <div class="finale-object flower-b">
+        ✿
+      </div>
+
+      <div class="finale-object flower-c">
+        ✿
+      </div>
+
+      <div class="finale-bee">
+        🐝
+      </div>
+
+
+      <div class="finale-content">
+
+        <p class="eyebrow">
+          PUT IT TOGETHER
+        </p>
+
+        <h2>
+          Movement should have a reason.
+        </h2>
+
+        <p class="large-copy">
+          Trigger. Property. Timing. Purpose.
+        </p>
+
+        <p>
+          Combine at least two animation systems in this
+          final section.
+        </p>
+
+        <a
+          class="button button-dark"
+          href="#top"
+        >
+          Return to top
+          <span aria-hidden="true">↑</span>
+        </a>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+
+  <footer class="site-footer">
+
+    <p>
+      Interaction + Motion Study
+    </p>
+
+    <p>
+      Interaction Design 3
+    </p>
+
+  </footer>
+
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
